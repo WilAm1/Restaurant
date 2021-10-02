@@ -1,8 +1,13 @@
 import "./style.css";
-// add this to your seperate module after
-// import Icon from "./images/wc-icon.webp";
-import getHome from "./home"
+// import getHome from "./home"
 
-console.log(document.body)
-const mainContent = document.querySelector('#content');
-mainContent.appendChild(getHome());
+// function loadContent(func) {
+//     const mainContent = document.querySelector('#content');
+//     const contentDiv = func()
+//         // New function that removes all nodes if no params.
+//         // Accepts a lot of nodes as param. Check mdn
+//     mainContent.replaceChildren(contentDiv);
+// }
+
+
+// window.onload = loadContent(getHome)
