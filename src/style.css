@@ -1,0 +1,15 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.content {
+    width: 80%;
+    border: solid 2px green;
+}
