@@ -10,11 +10,13 @@ const getHome = function() {
     const mainP = document.createElement('p');
     mainP.textContent = "You will surely recognize the familiar taste and sound!";
     mainText.appendChild(mainP);
-    const icon = document.createElement('image');
+    const iconContainer = makeElement('div', 'icon');
+    const icon = document.createElement('img');
     icon.src = Icon;
-    mainText.appendChild(icon);
+    iconContainer.appendChild(icon);
 
     topContent.appendChild(mainText);
+    topContent.appendChild(iconContainer);
     mainDiv.appendChild(topContent);
 
     //     <div class="default">

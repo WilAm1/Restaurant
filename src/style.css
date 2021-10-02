@@ -75,6 +75,10 @@ footer {
     /* flex: 1 */
 }
 
+.icon img {
+    width: 300px;
+}
+
 .bottom-content {
     display: flex;
     justify-content: space-evenly;

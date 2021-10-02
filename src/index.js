@@ -3,5 +3,6 @@ import "./style.css";
 // import Icon from "./images/wc-icon.webp";
 import getHome from "./home"
 
-
-console.log(getHome());
+console.log(document.body)
+const mainContent = document.querySelector('#content');
+mainContent.appendChild(getHome());
