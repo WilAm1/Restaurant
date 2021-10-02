@@ -1,9 +1,23 @@
 import makeElement from "./myFunc.js"
-
+import Icon from "./images/wc-icon.webp"
 const getHome = function() {
     const mainDiv = makeElement('div', 'default')
-    mainDiv.innerHTML = "hello"
-        //     <div class="default">
+    const topContent = makeElement('div', 'top-content');
+    const mainText = makeElement('div', 'main-text');
+    const h1 = document.createElement('h1');
+    h1.textContent = "The Best WcJoint in the WcWorld";
+    mainText.appendChild(h1);
+    const mainP = document.createElement('p');
+    mainP.textContent = "You will surely recognize the familiar taste and sound!";
+    mainText.appendChild(mainP);
+    const icon = document.createElement('image');
+    icon.src = Icon;
+    mainText.appendChild(icon);
+
+    topContent.appendChild(mainText);
+    mainDiv.appendChild(topContent);
+
+    //     <div class="default">
 
     //     <div class="top-content">
     //         <div class="main-text">
