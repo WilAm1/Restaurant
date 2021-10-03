@@ -103,8 +103,8 @@ footer {
 }
 
 .menu-stack .food-card {
-    height: 100px;
-    width: 150px;
+    height: 200px;
+    width: 350px;
     border: solid 2px #630A10;
     background-color: #FACE7F;
     display: flex;
@@ -114,6 +114,7 @@ footer {
 
 .food-card p {
     color: #630A10;
+    padding: 10px;
 }
 
 .sample-img {
@@ -125,4 +126,29 @@ footer {
 .bottom-content {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* Contacts  */
+
+.contact-box {
+    display: flex;
+    gap: 10px;
+}
+
+.scheld {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* .contact-box .location {
+    flex: 1;
+} */
+
+.contact-box li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
 }
