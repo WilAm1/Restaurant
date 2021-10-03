@@ -12,9 +12,11 @@ function loadContent(func) {
 }
 const home = document.querySelector('.menu-links #home');
 const menu = document.querySelector('.menu-links #menu');
+const contact = document.querySelector('.menu-links #contact');
 
 home.addEventListener('click', () => { loadContent(getHome) });
 menu.addEventListener('click', () => { loadContent(getMenu) });
+contact.addEventListener('click', () => { loadContent(getMenu) });
 
 
 window.onload = loadContent(getHome);
