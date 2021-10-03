@@ -1,5 +1,5 @@
 import makeElement from "./myFunc";
-
+import Map from "./images/map.png"
 const makeParagraph = (text) => {
     const e = document.createElement('p');
     e.textContent = text;
@@ -24,7 +24,7 @@ const getContact = function() {
 
     locationDiv.replaceChildren(locIntro, location);
 
-    const communicateDiv = makeElement('communicate');
+    const communicateDiv = makeElement('div', 'communicate');
     const commIntro = makeParagraph('Contact Us:');
     const ul = makeElement('ul', 'contact-ul');
 
@@ -45,7 +45,10 @@ const getContact = function() {
 
     contactBox.replaceChildren(scheld, locationDiv, communicateDiv);
 
-    const areaDiv = makeElement('div', 'position-container');
+    const areaDiv = makeElement('div', 'map-container');
+    const map = makeElement('img', '', 'map');
+    map.src = Map;
+    areaDiv.appendChild(map)
 
     mainDiv.replaceChildren(contactBox, areaDiv)
 

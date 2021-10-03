@@ -27,7 +27,7 @@ header {
 }
 
 h1 {
-    color: #FCF0C8;
+    color: #FACE7F;
 }
 
 nav {
@@ -63,7 +63,7 @@ footer {
 
 #content {
     width: 80%;
-    border: solid 2px green;
+    border: solid 2px #630A10;
     margin: 60px auto;
     min-height: 200px;
     /* max-height: 300px; */
@@ -133,7 +133,17 @@ footer {
 
 .contact-box {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    flex-flow: row wrap;
+}
+
+.contact-box>div {
+    background-color: #911F27;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    border: solid 2px #FACE7F;
+    color: #FCF0C8;
 }
 
 .scheld {
@@ -151,4 +161,21 @@ footer {
     list-style-type: none;
     margin: 10px 0;
     padding: 0;
+}
+
+.map-container {
+    background-color: #911F27;
+    border: 2px solid #FACE7F;
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 400px;
+    background-color: #FACE7F;
+    padding: 10px;
 }
