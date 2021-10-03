@@ -11,10 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FCF0C8;
-    /* background-image: url(./images/background.png);
+    background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover;
+    color: #FACE7F;
 }
 
 header {
@@ -55,10 +56,6 @@ nav li button {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
-}
-
-footer {
-    margin-top: auto;
 }
 
 #content {
@@ -178,4 +175,12 @@ footer {
     width: 400px;
     background-color: #FACE7F;
     padding: 10px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #911F27;
+    padding: 15px 0;
+    text-align: center;
+    color: #FACE7F
 }
