@@ -8,9 +8,9 @@ const getMenu = function() {
     h2.textContent = "Our Offers:";
 
     const menuStack = makeElement('div', 'menu-stack');
-    const menuList = ['WcBurger', 'WcFries', 'WcChicken', 'WcFloat', 'WcCoffee', 'WcSuper WcDeluxe WcFood']
+    const menuList = ['WcBurger', 'WcFries', 'WcChicken', 'WcFloat', 'WcCoffee', 'WcSuper WcFood']
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < menuList.length; i++) {
         const foodCard = makeElement('div', 'food-card', `food-${i+1}`);
         const imgDiv = makeElement('div', 'sample-img');
         imgDiv.textContent = 'sample-pic';
