@@ -3,7 +3,6 @@ import getHome from "./home";
 import getMenu from "./menu";
 
 function loadContent(func) {
-    // e.prevetDefault();
     const mainContent = document.querySelector('#content');
     const contentDiv = func()
         // New function that removes all nodes if no params.
@@ -11,17 +10,11 @@ function loadContent(func) {
     mainContent.replaceChildren(contentDiv);
 
 }
-const home = document.querySelector('#home');
-const menu = document.querySelector('#menu');
+const home = document.querySelector('.menu-links #home');
+const menu = document.querySelector('.menu-links #menu');
 
-home.addEventListener('click', (e) => {
-    e.preventDefault();
-    loadContent(getHome);
-})
-menu.addEventListener('click', (e) => {
-    e.preventDefault();
-    loadContent(getMenu);
-});
+home.addEventListener('click', () => { loadContent(getHome) });
+menu.addEventListener('click', () => { loadContent(getMenu) });
 
 
 window.onload = loadContent(getHome);

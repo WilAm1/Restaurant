@@ -44,11 +44,17 @@ nav>ul {
 
 nav li {
     list-style-type: none;
-}
-
-li a {
     color: #FCF0C8;
 }
+
+
+/* li button {
+    border: none;
+    background-color: #630A10;
+    color: #FCF0C8;
+    padding: 0;
+    margin: 0;
+} */
 
 footer {
     margin-top: auto;
